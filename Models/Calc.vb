@@ -17,8 +17,8 @@ Namespace Models
         <DisplayName("在宅手当")>
         Public Property HomeAllowance As Integer
 
-        <DisplayName("1ヶ月の定期代")>
-        Public Property OneMonthCommuterPass As Integer
+        <DisplayName("1ヶ月にかかる交通費")>
+        Public Property OneMonthTravelCost As Integer
 
         <DisplayName("定期代（京阪）")>
         Public Property CommuterPass_Keihan As Integer
@@ -47,16 +47,19 @@ Namespace Models
         <DisplayName("京阪（切符）＋地下鉄（切符）")>
         Public Property TravelCosts_WorkC As Integer
 
-        <DisplayName("交通費（プライベートA）")>
+        <DisplayName("京阪（定期）＋地下鉄（定期）")>
+        Public Property OneMonthCommuterPass As Integer
+
+        <DisplayName("プライベート交通費A")>
         Public Property TravelCosts_PrivateA As Integer
 
-        <DisplayName("交通費（プライベートB）")>
+        <DisplayName("プライベート交通費B")>
         Public Property TravelCosts_PrivateB As Integer
 
-        <DisplayName("交通費（プライベートC）")>
+        <DisplayName("プライベート交通費C")>
         Public Property TravelCosts_PrivateC As Integer
 
-        <DisplayName("交通費（プライベートD）")>
+        <DisplayName("プライベート交通費D")>
         Public Property TravelCosts_PrivateD As Integer
 
         <DisplayName("支給額からの差額")>

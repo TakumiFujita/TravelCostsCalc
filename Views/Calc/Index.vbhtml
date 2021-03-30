@@ -11,6 +11,8 @@ End Code
 
     @<div class="form-horizontal">
         <hr />
+        <h3 id="conclusion"></h3>
+        <br />
         @Html.ValidationSummary(True, "", New With {.class = "text-danger"})
         <div class="form-group">
             @Html.LabelFor(Function(model) model.NumOfWorkingDays, htmlAttributes:=New With {.class = "control-label col-md-2"})
@@ -105,6 +107,14 @@ End Code
             <div class="col-md-10">
                 @Html.EditorFor(Function(model) model.OneMonthCommuterPass, New With {.htmlAttributes = New With {.class = "form-control"}})
                 @Html.ValidationMessageFor(Function(model) model.OneMonthCommuterPass, "", New With {.class = "text-danger"})
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(Function(model) model.OneMonthTravelCost, htmlAttributes:=New With {.class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.EditorFor(Function(model) model.OneMonthTravelCost, New With {.htmlAttributes = New With {.class = "form-control"}})
+                @Html.ValidationMessageFor(Function(model) model.OneMonthTravelCost, "", New With {.class = "text-danger"})
             </div>
         </div>
 
