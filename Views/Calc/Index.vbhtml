@@ -143,24 +143,8 @@ End Code
             </div>*@
 
         <div class="form-group">
-            @Html.LabelFor(Function(model) model.Difference_FromPaymentAmount, htmlAttributes:=New With {.class = "control-label col-md-2"})
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.Difference_FromPaymentAmount, New With {.htmlAttributes = New With {.class = "form-control"}})
-                @Html.ValidationMessageFor(Function(model) model.Difference_FromPaymentAmount, "", New With {.class = "text-danger"})
-            </div>
-        </div>
-
-        <div class="form-group">
-            @Html.LabelFor(Function(model) model.SurplusTravelCost, htmlAttributes:=New With {.class = "control-label col-md-2"})
-            <div class="col-md-10">
-                @Html.EditorFor(Function(model) model.SurplusTravelCost, New With {.htmlAttributes = New With {.class = "form-control"}})
-                @Html.ValidationMessageFor(Function(model) model.SurplusTravelCost, "", New With {.class = "text-danger"})
-            </div>
-        </div>
-
-        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" id="calcBtn" value="計算する" class="btn btn-primary" />
+                <input type="button" id="calcBtn" value="計算する" class="btn btn-primary" />
                 <input type="reset" value="リセット" class="btn btn-default" />
             </div>
         </div>
